@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<books>
+	<book>
+		
+		<title>Wings of Fire</title>
+		<author>Abdul Kalam </author>
+		<price>1000</price>
+	</book>
+
+	<book>
+		
+		<title>Harry Potter</title>
+		<author>J.K. Rolling </author>
+		<price>1200</price>
+	</book>
+<book><title>title</title><author>author</author><price>price</price></book><book><title>Angels and Demons</title><author>Dan Brown</author><price>1600</price></book></books>

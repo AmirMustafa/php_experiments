@@ -1,0 +1,11 @@
+<div id="head">							<!-- Page 2 -->
+
+											<!-- This the header code of the website which is included in all the necessary pages( i.e. index.php, about.php, reg.php, login.php) -->
+	<h1>Practical Case Study</h1>
+	<div id="head_in">
+		<a href="index.php">Home</a>
+		<a href="about.php">About</a>
+		<a href="reg.php">Register</a>
+		<a href="login.php">Login</a>
+	</div>
+</div>

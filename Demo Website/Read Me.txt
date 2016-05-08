@@ -1,0 +1,31 @@
+Sequence of creation of pages:
+
+Website: 
+  
+db.php --> header.php --> style.css --> index.php --> about.php --> reg.php --> register.php --> login.php -->
+
+sessioncheck.php --> logincheck.php --> header1.php --> user_page.php --> edit_pro.php --> update.php --> logout.php -->
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+
+Admin: 
+
+Then we will manually create the admin folder
+
+and write the admin codes after all the above codes :
+
+index.php(i.e. login page of admin) --> logincheck.php --> header.php --> sessioncheck.php --> admin_page.php --> cms.php -->
+
+updatec.php --> getc.php --> delete.php --> view.php --> logout,php
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+ 

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<script>
+		function fun()
+		{
+			var x = new XMLHttpRequest(); //Sending XMLHttp request to server
+			x.open('get','demo1.php',true); /* for sending this packed xmlhttp file by get method from demo1.php. true indicates-->asynchronous and false--> synchronous */
+			x.send();   //data sending
+			x.onreadystatechange = function()
+			{
+				if((x.readyState == 4) && (x.status == 200))
+				{
+					document.getElementById('msg').innerHTML = x.responseText;
+				}
+			}
+		}
+	</script>
+
+ <body>
+	<h1 onclick="fun()">click</h1>
+	<div id="msg"></div>
+ </body>
+</html>

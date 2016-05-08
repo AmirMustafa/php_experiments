@@ -1,0 +1,8 @@
+Read for Understanding
+
+1. Note here we have created seperate connection page of MySql and included in all pages.
+2. Created Department user entry form page and department insert page.
+3. Created Employee user entry form page and Employee insert page.
+4. Have created one table page here we have created table structure(i.e employee id,name and salary)
+5. Have created one index page(user page)-->created for customer (interface page) where he can access that his data without
+   moving to different pages. 

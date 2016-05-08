@@ -1,0 +1,57 @@
+create database kapil     //for creating database
+
+create table emp	  //for creating table structure
+{
+	eid int(10),
+	ename varchar(60),
+	esal int(10)
+};
+
+insert into emp values(1,'sneha',50000)  //inserting single row
+
+insert into emp values(1,'sneha',50000),(2,'Rahul',50001) //inserting multiple rows
+
+insert into emp(ename,esal,eid) values('Aamir',50000,4)  //if we want to insert in random order.
+
+update emp set esal = 45000   //all records will have salary 45000
+
+update emp set esal = 45000 where eid = 4 // only for eid 4 it will update 45000
+
+delete from emp //delete all records but not structure
+
+delete from emp where eid = 4  //delete specific record
+
+drop table emp //will delete table and structure both
+
+drop database kapil  //delete database completely
+
+alter table emp add column address varchar(100)  // add  column with name address at the end
+
+alter table emp drop column address    //deleting column with name address
+
+alter table emp add column address varchar(100) after ename  // adding column after specific column  
+
+alter table emp add column address varchar(100) first  // to add column in the beginning
+
+alter table modify address text    // to change the datatype
+
+alter table emp change address addr text   //to rename data addr
+
+
+select * from emp // select all data of table emp
+
+select * from emp where eid = 3 // select eid = 3's data only of table emp
+
+select max(esal) from emp   //selects maximum salary from emp table
+
+select min(esal) from emp  //selects minimum salary from emp table
+
+select avg(esal) from emp  //displays average salary from emp table
+
+select sum(esal) from emp  //displays total salary from emp table 
+
+select esal from emp where ename like 'Kapil' // like query tells about name generally for searching names, we can use modular to search alomost same result.
+
+
+select ename,esal from emp where esal =(select max(esal) from emp)
+// to create table with maximum salary along with its correct Person getting salary-- use of nested query.

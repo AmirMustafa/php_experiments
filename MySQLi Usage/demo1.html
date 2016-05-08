@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<script>
+		function fun()
+		{
+			var x = new XMLHttpRequest();  //sending XMLHttpRequest
+			x.open('get','demo1.php',true);
+			x.send();
+			x.onreadystatechange = function()
+			{
+				if((x.readyState == 4) && (x.status == 200))
+				{
+					document.getElementById('msg').innerHTML = x.responseText;
+				}
+			}
+		}
+	</script>
+	</head>
+
+ <body>
+	<h1 onclick="fun()">click</h1>
+	<div id="msg"></div>
+ </body>
+</html>

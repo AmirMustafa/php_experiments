@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script>
+		function get()
+		{
+			var x = new XMLHttpRequest();
+			x.open('get','demo.php',false);
+			x.send();
+			var d = JSON.parse(x.responseText);
+			document.write("<table>	<tr> <td>ID</td>	<td>NAME</td>	<td>SALARY</td>		</tr>");
+
+			for(i in d)
+			{
+				document.write("<tr>");
+				for(j in d[i])
+				{
+					document.write("<td>"+d[i][j]+"</td>");
+				}
+				document.write("</tr>");
+			}
+			
+			//for()
+			/*alert(Object.keys(d).length); //ourter length of json
+			for(i in d)
+			{
+				for(j in d[i])
+				{
+					alert(d[i][j]);
+				}
+			}*/
+
+
+		}
+	</script>
+		
+ </head>
+
+ <body>
+	
+	<button onclick="get()">Get data</button>
+ </body>
+</html>
